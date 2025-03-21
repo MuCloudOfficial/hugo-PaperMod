@@ -6,7 +6,7 @@
     --header-height: 60px;
     --footer-height: 60px;
     --radius: 8px;
-    --theme: rgb(255, 255, 255);
+    --theme: url("../../bg/bg1.jpg");
     --entry: rgb(255, 255, 255);
     --primary: rgb(30, 30, 30);
     --secondary: rgb(108, 108, 108);
@@ -15,10 +15,15 @@
     --code-block-bg: rgb(28, 29, 33);
     --code-bg: rgb(245, 245, 245);
     --border: rgb(238, 238, 238);
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
 
 .dark {
-    --theme: rgb(29, 30, 32);
+    --theme: url("../../bg/bg1.jpg");
     --entry: rgb(46, 46, 51);
     --primary: rgb(218, 218, 219);
     --secondary: rgb(155, 156, 157);
@@ -27,12 +32,17 @@
     --code-block-bg: rgb(46, 46, 51);
     --code-bg: rgb(55, 56, 62);
     --border: rgb(51, 51, 51);
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
 
-.list {
-    background-image: url("../../bg/bg1.jpg");
-}
-
-.dark.list {
-    background-image: url("../../bg/bg1.jpg");
+.list, .dark.list{
+    background-image: var(--theme);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
