@@ -30,9 +30,9 @@
 }
 
 .list {
-    background: var(--code-bg);
+    background-image: url("../../bg/bg1.jpg");
 }
 
 .dark.list {
-    background: var(--theme);
+    background-image: url("../../bg/bg1.jpg");
 }
