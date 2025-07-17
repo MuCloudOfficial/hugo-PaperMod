@@ -1,3 +1,7 @@
+.header{
+    background-color: rgb(30,30,30);
+}
+
 .nav {
     display: flex;
     flex-wrap: wrap;
